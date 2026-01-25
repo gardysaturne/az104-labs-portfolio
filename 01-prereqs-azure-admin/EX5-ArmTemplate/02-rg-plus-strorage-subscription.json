@@ -25,8 +25,7 @@
     }
   },
   "variables": {
-    "uniq": "[toLower(uniqueString(subscription().subscriptionId, parameters('rgName'), parameters('location')))]",
-    "storageName": "[toLower(concat('st', substring(concat(variables('uniq'), variables('uniq'), '000000000000000000000000000000'), 0, 22)))]"
+    "storageName": "[substring(toLower(concat('st', uniqueString(subscription().subscriptionId, parameters('rgName'), parameters('location')), uniqueString(subscription().subscriptionId, parameters('rgName'), parameters('location')))), 0, 24)]"
   },
   "resources": [
     {
@@ -46,15 +45,9 @@
       "properties": {
         "mode": "Incremental",
         "parameters": {
-          "storageName": {
-            "value": "[variables('storageName')]"
-          },
-          "location": {
-            "value": "[parameters('location')]"
-          },
-          "storageSku": {
-            "value": "[parameters('storageSku')]"
-          }
+          "storageName": { "value": "[variables('storageName')]" },
+          "location": { "value": "[parameters('location')]" },
+          "storageSku": { "value": "[parameters('storageSku')]" }
         },
         "template": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
@@ -77,8 +70,7 @@
               "properties": {
                 "accessTier": "Hot",
                 "minimumTlsVersion": "TLS1_2",
-                "allowBlobPublicAccess": false,
-                "supportsHttpsTrafficOnly": true
+                "allowBlobPublicAccess": false
               }
             }
           ],
