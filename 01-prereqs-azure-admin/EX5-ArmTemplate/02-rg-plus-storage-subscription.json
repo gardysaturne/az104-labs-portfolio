@@ -25,7 +25,7 @@
     }
   },
   "variables": {
-    "storageName": "[substring(toLower(concat('st', uniqueString(subscription().subscriptionId, parameters('rgName'), parameters('location')))), 0, 22)]"
+    "storageName": "[substring(toLower(concat('st', uniqueString(subscription().subscriptionId, parameters('rgName'), parameters('location')), uniqueString(subscription().subscriptionId, deployment().name))), 0, 24)]"
   },
   "resources": [
     {
