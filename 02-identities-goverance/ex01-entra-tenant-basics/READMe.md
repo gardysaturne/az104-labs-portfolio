@@ -46,12 +46,3 @@ All screenshots are stored to support **auditing, interviews, and consulting wal
 
 ---
 
-### Interview Readiness
-
-After completing this exercise, you should be able to clearly explain:
-
-- Why **subscriptions do not define identity boundaries** in Azure
-- How tenant-to-subscription association affects **RBAC assignments**
-- How Azure management hierarchy works:  
-  **Resource → Resource Group → Subscription → Management Group**
-
