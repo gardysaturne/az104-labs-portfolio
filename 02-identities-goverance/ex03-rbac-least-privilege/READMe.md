@@ -52,14 +52,3 @@ Your task is to implement RBAC using the three core elements:
 
 All screenshots demonstrate **controlled access**, **scope awareness**, and **RBAC validation**.
 
----
-
-### Interview Readiness
-
-After completing this exercise, you should be able to explain:
-
-- The three RBAC components: **who, what, and where**
-- Differences between **Owner, Contributor, Reader, and User Access Administrator**
-- Why assigning **Owner** broadly is a security risk
-- How **Inherited vs This resource** role assignments affect access
-
