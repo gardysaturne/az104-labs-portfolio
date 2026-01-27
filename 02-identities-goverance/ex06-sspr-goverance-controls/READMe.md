@@ -19,4 +19,13 @@ A global organization with users across **Americas / EMEA / APAC** needs passwor
 4. Validate user impact (registration prompt / registration status if visible)
 5. Document rollout phases and user comms
 
+## Rollout Approach (Phased)
+- **Phase 1:** Pilot group (`grp-sspr-pilot`) — validate user experience + support process
+- **Phase 2:** Americas — expand to regional ops/users after pilot success
+- **Phase 3:** EMEA — expand with compliance + comms alignment
+- **Phase 4:** APAC — expand with time zone support coverage and adoption tracking
+
+## User Communication (Example)
+- “You’ll be prompted to register security info for Self-Service Password Reset. Registration is required to reset your password without IT support.”
+- “If you do not register, password resets may take longer and require helpdesk verification.”
 
