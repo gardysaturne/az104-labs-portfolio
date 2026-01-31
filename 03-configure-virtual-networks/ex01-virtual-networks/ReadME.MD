@@ -70,16 +70,6 @@ These artifacts are suitable for **architecture reviews, audits, interviews, and
 
 ---
 
-### What You Should Be Able to Explain in Interviews
-
-- Why **IP address planning** is a first-class architectural decision in Azure
-- How **subnet segmentation** supports least privilege and traffic control
-- What Azure’s **reserved IP addresses** are used for and why they matter
-- Why platform services require **dedicated subnets**
-- How this design supports **future regions, peering, and hybrid connectivity** without rework
-
----
-
 ### Outcome
 
 At the end of this exercise, the Azure environment has a **clean, scalable network foundation** that reflects **platform thinking**, not lab-driven configuration.
