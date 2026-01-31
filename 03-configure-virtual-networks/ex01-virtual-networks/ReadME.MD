@@ -48,7 +48,7 @@ All IP ranges are planned to **avoid overlap** and allow for seamless peering, s
 
 ---
 
-### Key Design Decisions (Director-Level Context)
+### Key Design Decisions
 
 - **/16 address spaces** are used at the VNet level to prevent early exhaustion.
 - **/24 subnets** provide sufficient capacity while maintaining clear segmentation.
