@@ -106,3 +106,41 @@ This ensured:
 - Adopted lab lifecycle rule:
   CREATE → USE → DOCUMENT → DELETE
 - Avoid deploying high-cost services without purpose
+
+## 🚨 Engineering Reflection (Root Cause Thinking)
+
+This incident exposed a gap in my cloud engineering discipline, specifically around resource lifecycle management.
+
+I deployed enterprise-grade services (Application Gateway with WAF) without:
+- Defining a teardown strategy
+- Understanding continuous billing behavior
+- Setting cost guardrails (budgets / alerts)
+
+The mistake was not technical — it was operational.
+
+---
+
+## 🔁 Behavioral Change
+
+Going forward, every lab follows a strict lifecycle:
+
+CREATE → USE → DOCUMENT → DELETE
+
+Additionally:
+- High-cost services (Application Gateway, WAF, Bastion, NAT Gateway) are only deployed with clear purpose
+- Resource groups are treated as disposable units of work
+- Cost is reviewed immediately after each lab session
+
+---
+
+## 🧠 Engineering Upgrade
+
+This experience shifted my mindset from:
+
+"Can I deploy this?"
+
+To:
+
+"Can I deploy, operate, and safely decommission this?"
+
+This aligns more closely with real-world cloud engineering responsibilities.
