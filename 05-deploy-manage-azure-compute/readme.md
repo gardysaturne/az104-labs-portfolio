@@ -42,7 +42,3 @@ README.md
 /ex06-app-service-scale-up-scale-out-autoscale/
 /ex07-deployment-slots-custom-domain-backup/
 /ex08-application-insights-monitoring/
-
-
-  /ex07/
-  /ex08/
